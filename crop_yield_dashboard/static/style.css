@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden; /* Hide scrollbar */
+}
+
+.container {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+#start-section {
+    background-color: #f0f8ff;
+}
+
+#options-section {
+    background-color: #e6f7ff;
+}
+
+#cultivate-btn {
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cultivate-btn:hover {
+    background-color: #218838;
+}
+
+.options {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.option-btn {
+    padding: 1.5rem 2.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.option-btn:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #0056b3;
+    padding: 0 0.5rem;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>The predicted yield for <strong>{{ crop }}</strong> is:</p>
+        <h2>{{ yield_prediction }} kg/ha</h2>
+        <a href="/">Predict Again</a>
+    </div>
+</body>
+</html>

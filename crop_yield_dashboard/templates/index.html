@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container" id="main-container">
+        <div class="scroll-section" id="start-section">
+            <button id="cultivate-btn">Let's Cultivate</button>
+        </div>
+        <div class="scroll-section" id="options-section">
+            <h1>Select an Option</h1>
+            <div class="options">
+                <a href="/predict_yield" class="option-btn">Crop Yield Production</a>
+                <a href="/best_crop" class="option-btn">Best Crop to Plant</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('cultivate-btn').addEventListener('click', function() {
+            document.getElementById('options-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
