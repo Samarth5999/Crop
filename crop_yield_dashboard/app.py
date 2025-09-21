@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('crop_yield_dashboard/crop_model.pkl')
+model = joblib.load('crop_yield_dashboard/ml/crop_model.pkl')
 
 @app.route('/')
 def index():
